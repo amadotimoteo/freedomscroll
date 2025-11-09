@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejam Livres</title>
+    <link rel="stylesheet" href="..css/style.css">
+</head>
+<body>
+    <div id="initial-overlay">
+    <p>Clique e descubra a liberdade.</p>
+    <button id="start-experience-btn">Iniciar</button>
+    </div>
+    <section class="main-section">
+        <div class="wrapper-action">
+            <div class="hero" style="--degrade: -150deg; --transparent: 100%; --black: 100%;">
+                <picture>
+                    <img src="../imagens/Lamb.jpg" alt="imagen" class="pixel-loader">
+                </picture>
+                <div class="pixel-overlay"></div>
+
+                <div class="hero-barcode-container">
+                    <svg width="200" height="120" viewBox="0 0 200 120" xmlns="http://www.w3.org/2000/svg" class="hero-barcode">
+                        <defs>
+                            <linearGradient id="heroBarcodeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:#00ffff;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#0088ff;stop-opacity:1" />
+                            </linearGradient>
+                            <filter id="heroGlow">
+                                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                                <feMerge> 
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+
+                        <rect x="10" y="20" width="3" height="80" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 1"/>
+                        <rect x="15" y="30" width="2" height="60" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 2"/>
+                        <rect x="18" y="10" width="4" height="100" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 3"/>
+                        <rect x="24" y="40" width="2" height="40" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 4"/>
+                        <rect x="28" y="15" width="3" height="90" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 5"/>
+                        <rect x="33" y="50" width="2" height="20" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 6"/>
+                        <rect x="37" y="25" width="5" height="70" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 7"/>
+                        <rect x="44" y="35" width="2" height="50" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 8"/>
+                        <rect x="48" y="5" width="3" height="110" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 9"/>
+                        <rect x="53" y="45" width="2" height="30" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 10"/>
+                        <rect x="57" y="20" width="4" height="80" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 11"/>
+                        <rect x="63" y="55" width="2" height="10" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 12"/>
+                        <rect x="67" y="12" width="3" height="96" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 13"/>
+                        <rect x="72" y="40" width="2" height="40" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 14"/>
+                        <rect x="76" y="18" width="6" height="84" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 15"/>
+                        <rect x="84" y="50" width="2" height="20" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 16"/>
+                        <rect x="88" y="10" width="3" height="100" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 17"/>
+                        <rect x="93" y="35" width="2" height="50" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 18"/>
+                        <rect x="97" y="22" width="4" height="76" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 19"/>
+                        <rect x="103" y="60" width="2" height="0" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 20"/>
+                        <rect x="107" y="15" width="3" height="90" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 21"/>
+                        <rect x="112" y="45" width="2" height="30" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 22"/>
+                        <rect x="116" y="25" width="5" height="70" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 23"/>
+                        <rect x="123" y="55" width="2" height="10" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 24"/>
+                        <rect x="127" y="8" width="3" height="104" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 25"/>
+                        <rect x="132" y="40" width="2" height="40" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 26"/>
+                        <rect x="136" y="20" width="4" height="80" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 27"/>
+                        <rect x="142" y="50" width="2" height="20" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 28"/>
+                        <rect x="146" y="12" width="3" height="96" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 29"/>
+                        <rect x="151" y="35" width="2" height="50" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 30"/>
+                        <rect x="155" y="18" width="5" height="84" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 31"/>
+                        <rect x="162" y="60" width="2" height="0" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 32"/>
+                        <rect x="166" y="10" width="3" height="100" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 33"/>
+                        <rect x="171" y="45" width="2" height="30" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 34"/>
+                        <rect x="175" y="25" width="4" height="70" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 35"/>
+                        <rect x="181" y="55" width="2" height="10" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 36"/>
+                        <rect x="185" y="15" width="3" height="90" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 37"/>
+                        <rect x="190" y="40" width="2" height="40" fill="url(#heroBarcodeGradient)" filter="url(#heroGlow)" style="--bar-index: 38"/>
+
+                        <line x1="0" y1="60" x2="200" y2="60" stroke="#00ff88" stroke-width="2" opacity="0.8" style="--scan-index: 1"/>
+                        <line x1="0" y1="55" x2="200" y2="55" stroke="#00ffff" stroke-width="1" opacity="0.6" style="--scan-index: 2"/>
+                        <line x1="0" y1="65" x2="200" y2="65" stroke="#0088ff" stroke-width="1" opacity="0.6" style="--scan-index: 3"/>
+
+                        <circle cx="30" cy="60" r="2" fill="#00ff88" style="--data-index: 1"/>
+                        <circle cx="60" cy="60" r="2" fill="#00ffff" style="--data-index: 2"/>
+                        <circle cx="90" cy="60" r="2" fill="#0088ff" style="--data-index: 3"/>
+                        <circle cx="120" cy="60" r="2" fill="#00ff88" style="--data-index: 4"/>
+                        <circle cx="150" cy="60" r="2" fill="#00ffff" style="--data-index: 5"/>
+                        <circle cx="180" cy="60" r="2" fill="#0088ff" style="--data-index: 6"/>
+
+                        <circle cx="25" cy="30" r="1" fill="#00ff88" opacity="0.7" style="--particle-index: 1"/>
+                        <circle cx="55" cy="90" r="1" fill="#00ffff" opacity="0.7" style="--particle-index: 2"/>
+                        <circle cx="85" cy="25" r="1" fill="#0088ff" opacity="0.7" style="--particle-index: 3"/>
+                        <circle cx="115" cy="95" r="1" fill="#00ff88" opacity="0.7" style="--particle-index: 4"/>
+                        <circle cx="145" cy="35" r="1" fill="#00ffff" opacity="0.7" style="--particle-index: 5"/>
+                        <circle cx="175" cy="85" r="1" fill="#0088ff" opacity="0.7" style="--particle-index: 6"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-before" style="--transparent3: 100%; --black3: 100%;"></div>
+                <div class="content-after" style="--transparent2: 100%; --black2: 100%;">
+                    <div class="title">
+                        <h1>SEJAM LIVRES</h1>
+                    </div>
+                    <div class="description">
+                        <div>
+                            <h2>João 8:36</h2>
+                            <p>Entre no reino da graça, onde a culpa se desfaz em luz.
+                                O Cordeiro restaura códigos quebrados pela queda,
+                                unindo o divino e o humano num só pulso eterno.
+                                O futuro é agora e é feito de liberdade.
+                            </p>
+                        </div>
+                        <div>
+                            <svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" class="futuristic-barcode">
+                                <defs>
+                                    <linearGradient id="barcodeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+                                        <stop offset="50%" style="stop-color:#00ffff;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#0088ff;stop-opacity:1" />
+                                    </linearGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                        <feMerge> 
+                                            <feMergeNode in="coloredBlur"/>
+                                            <feMergeNode in="SourceGraphic"/>
+                                        </feMerge>
+                                    </filter>
+                                </defs>
+
+                                <rect x="5" y="10" width="2" height="60" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 1"/>
+                                <rect x="8" y="15" width="1" height="50" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 2"/>
+                                <rect x="10" y="5" width="3" height="70" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 3"/>
+                                <rect x="14" y="20" width="1" height="40" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 4"/>
+                                <rect x="16" y="8" width="2" height="64" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 5"/>
+                                <rect x="19" y="25" width="1" height="30" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 6"/>
+                                <rect x="21" y="12" width="4" height="56" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 7"/>
+                                <rect x="26" y="18" width="1" height="44" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 8"/>
+                                <rect x="28" y="3" width="2" height="74" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 9"/>
+                                <rect x="31" y="22" width="1" height="36" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 10"/>
+                                <rect x="33" y="15" width="3" height="50" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 11"/>
+                                <rect x="37" y="28" width="1" height="24" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 12"/>
+                                <rect x="39" y="7" width="2" height="66" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 13"/>
+                                <rect x="42" y="20" width="1" height="40" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 14"/>
+                                <rect x="44" y="10" width="4" height="60" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 15"/>
+                                <rect x="49" y="25" width="1" height="30" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 16"/>
+                                <rect x="51" y="5" width="2" height="70" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 17"/>
+                                <rect x="54" y="18" width="1" height="44" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 18"/>
+                                <rect x="56" y="12" width="3" height="56" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 19"/>
+                                <rect x="60" y="30" width="1" height="20" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 20"/>
+                                <rect x="62" y="8" width="2" height="64" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 21"/>
+                                <rect x="65" y="22" width="1" height="36" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 22"/>
+                                <rect x="67" y="15" width="4" height="50" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 23"/>
+                                <rect x="72" y="28" width="1" height="24" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 24"/>
+                                <rect x="74" y="5" width="2" height="70" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 25"/>
+                                <rect x="77" y="20" width="1" height="40" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 26"/>
+                                <rect x="79" y="10" width="3" height="60" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 27"/>
+                                <rect x="83" y="25" width="1" height="30" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 28"/>
+                                <rect x="85" y="8" width="2" height="64" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 29"/>
+                                <rect x="88" y="18" width="1" height="44" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 30"/>
+                                <rect x="90" y="12" width="4" height="56" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 31"/>
+                                <rect x="95" y="30" width="1" height="20" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 32"/>
+                                <rect x="97" y="5" width="2" height="70" fill="url(#barcodeGradient)" filter="url(#glow)" style="--bar-index: 33"/>
+
+                                <line x1="0" y1="40" x2="120" y2="40" stroke="#00ff88" stroke-width="1" opacity="0.8" style="--scan-index: 1"/>
+                                <line x1="0" y1="35" x2="120" y2="35" stroke="#00ffff" stroke-width="0.5" opacity="0.6" style="--scan-index: 2"/>
+                                <line x1="0" y1="45" x2="120" y2="45" stroke="#0088ff" stroke-width="0.5" opacity="0.6" style="--scan-index: 3"/>
+
+                                <circle cx="20" cy="40" r="1" fill="#00ff88" style="--data-index: 1"/>
+                                <circle cx="40" cy="40" r="1" fill="#00ffff" style="--data-index: 2"/>
+                                <circle cx="60" cy="40" r="1" fill="#0088ff" style="--data-index: 3"/>
+                                <circle cx="80" cy="40" r="1" fill="#00ff88" style="--data-index: 4"/>
+                                <circle cx="100" cy="40" r="1" fill="#00ffff" style="--data-index: 5"/>
+
+                                <circle cx="15" cy="20" r="0.5" fill="#00ff88" opacity="0.7" style="--particle-index: 1"/>
+                                <circle cx="35" cy="60" r="0.5" fill="#00ffff" opacity="0.7" style="--particle-index: 2"/>
+                                <circle cx="55" cy="15" r="0.5" fill="#0088ff" opacity="0.7" style="--particle-index: 3"/>
+                                <circle cx="75" cy="65" r="0.5" fill="#00ff88" opacity="0.7" style="--particle-index: 4"/>
+                                <circle cx="95" cy="25" r="0.5" fill="#00ffff" opacity="0.7" style="--particle-index: 5"/>
+                            </svg>
+                            Busque-O
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-section" style="--transparent4: 100%; --black4: 100%;">
+            <div class="images">
+                <picture>
+                    <img src="../imagens/Cordeiro.jpeg" alt="imagen" loading="lazy">
+                </picture>
+                <picture>
+                    <img src="../imagens/Leão.jpeg" alt="imagen" loading="lazy">
+                </picture>
+
+                <div class="gallery-description">
+        <div class="card">
+            <h3>O Sacrifício e a vitória</h3>
+            <p>A mansidão venceu o medo.<br>
+            A liberdade nasceu do silêncio.<br>
+            O Cordeiro não fugiu, Ele se entregou.</p>
+        </div>
+        <div class="card">
+            <h4>A Vitória</h4>
+            <p>A voz que um dia silenciou agora ruge eternidade.<br>
+            O Leão levantou-se e com Ele, toda esperança.<br>
+            O amor venceu o poder da morte.</p>
+        </div>
+
+            </div>
+        </div>
+    </section>
+
+    <audio id="background-audio" loop>
+        <source src="../audio/Freedoom.mp3" type="audio/mpeg">
+        Seu navegador não suporta a tag de áudio.
+    </audio>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
